@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>VK Tyres</title>
+  <meta name="title" content="VK Tyres Sri Lanka">
+  <meta name="description" content="This is a tyre shop srilanka">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - material icon font
+  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0" />
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/storeimg.jpeg">
+  <link rel="preload" as="image" href="./assets/images/wideimg.jpeg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+    <div class="container">
+
+      <a href="#" class="logo">
+        <div class="logoclass">
+        <img src="./assets/images/VKtyre.png" width="128" height="63" alt="autofix home" >
+      </div>
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Products</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn-primary">
+        <span class="span">Call Now</span>
+
+        <span class="material-symbols-rounded">arrow_forward</span>
+      </a>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="nav-toggle-icon icon-1"></span>
+        <span class="nav-toggle-icon icon-2"></span>
+        <span class="nav-toggle-icon icon-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/tyrebg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle :dark"> Get the best deals on a wide range of tyres </p>
+
+            <h1 class="h1 section-title">Your One-Stop Shop for Wholesale Tyres </h1>
+
+            <p class="section-text">
+              Quality tyres, unbeatable prices, expert service for your vehicle , Best dealer in Sri Lanka 
+            </p>
+
+            <a href="#" class="btn">
+              <span class="span">Read more</span>
+
+              <span class="material-symbols-rounded">arrow_forward</span>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner" style="--width: 1228; --height: 789;">
+            <img src="./assets/images/tyreslider.png" width="1028" height="789" alt="Tyre PNG by pab's"
+              class="move-anim">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about has-before" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+      
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle :dark">About Us</p>
+
+            <h2 class="h2 section-title">We’re Commited to Meet the quality</h2>
+
+            <p class="section-text">
+              VK Tyres is a leading wholesale tyre supplier in Sri Lanka, offering a comprehensive selection of high-quality tyres for various vehicles. 
+              We are committed to providing our customers with competitive prices, exceptional service, and expert advice.
+            </p>
+            <br/>
+
+            <p class="section-text">
+              Why Choose VK Tyres? 
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <p>
+                  <strong class="display-1 strong">Range</strong> We offer a vast selection of tyres
+                </p>
+              </li>
+
+
+              <li class="about-item">
+                <p>
+                  <strong class="display-1 strong">Prices</strong>  Best wholesale prices in Sri Lanka
+                </p>
+              </li>
+
+              <li class="about-item">
+                <p>
+                  <strong class="display-1 strong">Services</strong> Assist you in finding the perfect tyres
+                </p>
+              </li>
+
+              <li class="about-item">
+                <p>
+                  <strong class="display-1 strong">Delivery</strong> Efficient delivery across Sri Lanka
+                </p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!--
+        - #Products 
+      -->
+
+
+      <section class="section products" aria-labelledby="products-label">
+        <div class="container">
+      
+          <p class="section-subtitle :dark" id="products-label">Our Products</p>
+      
+          <h2 class="h2 section-title">High-Quality Tyres for Every Need</h2>
+      
+          <div class="product-categories">
+            <button class="category-btn" data-category="all">All</button>
+            <button class="category-btn" data-category="10.00R20(18PR) - Heavy load">10.00R20(18PR) - Heavy load</button>
+            <button class="category-btn" data-category="10.00R20(18PR)">10.00R20(18PR)</button>
+            <button class="category-btn" data-category="295/80R22.5(18PR)">295/80R22.5(18PR)</button>
+            <button class="category-btn" data-category="295/80R22.5(18PR) - Heavy load">295/80R22.5(18PR) - Heavy load</button>
+            <button class="category-btn" data-category="10.00R20 - Tube">10.00R20 - Tube</button>
+          </div>
+      
+          <div class="product-list">
+            <div class="product-card" data-category="10.00R20(18PR) - Heavy load">
+              <img src="./assets/images/products/01 - 10.00R20(18PR) - Heavy load 1.jpg" alt="Product 1" class="product-image">
+              <p class="product-name">Heavy load 1</p>
+            </div>
+      
+            <div class="product-card" data-category="10.00R20(18PR) - Heavy load">
+              <img src="./assets/images/products/01 - 10.00R20(18PR) - Heavy load 2.jpg" alt="Product 2" class="product-image">
+              <p class="product-name">Heavy load 2</p>
+            </div>
+      
+            <div class="product-card" data-category="10.00R20(18PR) - Heavy load">
+              <img src="./assets/images/products/01 - 10.00R20(18PR) - Heavy load 3.jpg" alt="Product 3" class="product-image">
+              <p class="product-name">Heavy load 3</p>
+            </div>
+
+                        <!-- divider -->
+      
+            <div class="product-card" data-category="10.00R20(18PR)">
+              <img src="./assets/images/products/02 - 10.00R20(18PR) 1.jpg" alt="Product 4" class="product-image">
+              <p class="product-name">10.00R20 (1)</p>
+            </div>
+      
+            <div class="product-card" data-category="10.00R20(18PR)">
+              <img src="./assets/images/products/02 - 10.00R20(18PR) 2.jpg" alt="Product 5" class="product-image">
+              <p class="product-name">10.00R20 (2)</p>
+            </div>
+
+                        <!-- divider -->
+
+      
+            <div class="product-card" data-category="295/80R22.5(18PR)">
+              <img src="./assets/images/products/03 - 295-80R22.5(18PR) 1.jpg" alt="Product 6" class="product-image">
+              <p class="product-name">tyre 1</p>
+            </div>
+      
+            <div class="product-card" data-category="295/80R22.5(18PR) - Heavy load">
+              <img src="./assets/images/products/03 - 295-80R22.5(18PR) 2.AVIF" alt="Product 7" class="product-image">
+              <p class="product-name">tyre 2</p>
+            </div>
+      
+            <div class="product-card" data-category="295/80R22.5(18PR) - Heavy load">
+              <img src="./assets/images/products/03 - 295-80R22.5(18PR) 3.webp" alt="Product 8" class="product-image">
+              <p class="product-name">tyre 3</p>
+            </div>
+      
+            <div class="product-card" data-category="295/80R22.5(18PR) - Heavy load">
+              <img src="./assets/images/products/03 - 295-80R22.5(18PR) 4.jpg" alt="Product 9" class="product-image">
+              <p class="product-name">tyre 4</p>
+            </div>
+
+
+                        <!-- divider -->
+
+      
+        
+            <div class="product-card" data-category="295/80R22.5(18PR) - Heavy load">
+              <img src="./assets/images/products/04 - 295-80R22.5(18PR) - Heavy load  1.jpg" alt="Product 10" class="product-image">
+              <p class="product-name">tyre 5</p>
+            </div>
+
+          
+
+
+                        <!-- divider -->
+
+      
+            <div class="product-card" data-category="10.00R20 - Tube">
+              <img src="./assets/images/products/05 - 10.00R20 - Tube .jpg" alt="Product 11" class="product-image">
+              <p class="product-name">tyre 6</p>
+            </div>
+          </div>
+      
+        </div>
+      </section>
+      
+
+
+      <!-- contact -->
+
+     
+      <section class="contact-section">
+        <div class="contactbody"></div>
+        <div class="containerrr">
+          <h2>Contact Us</h2>
+          <div class="contact-details">
+              <div class="contact-item address">
+                  <h3>Address</h3>
+                  <p>42, Babapulle place, Grandpass Road, Colombo 14</p>
+              </div>
+              <div class="contact-item phone">
+                  <h3>Phone Numbers</h3>
+                  <p>0762460228</p>
+                  <p>0773632208</p>
+                  <p>0112381931</p>
+              </div>
+              <div class="contact-item email">
+                  <h3>Email</h3>
+                  <p>vktyres.ceylon@gmail.com</p>
+                  <p>info@vktyres.lk</p>
+              </div>
+              <div class="contact-item whatsapp">
+                <a href="https://wa.me/+94762460228" target="_blank"> <img src="./assets/images/whatsapp-svgrepo-com.svg" alt="facebook" style="padding-left: 120px;">
+                <h3>WhatsApp </h3>
+                
+               
+                <p>+94762460228</p>  </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- contact end -->
+
+
+
+
+    
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top section">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/VKtyre.png" width="128" height="63" alt="autofix home" style="background-color: aliceblue; border-radius: 20px;">
+          </a>
+
+          <p class="footer-text">
+          
+            Your one-stop shop for wholesale tyres |
+            Quality tyres, unbeatable prices, expert service for your vehicle , Best dealer in Sri Lanka
+            
+           
+            
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/facebook.svg" alt="facebook">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/instagram.svg" alt="instagram">
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <img src="./assets/images/whatsapp-svgrepo-com footer.svg" alt="twitter">
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h3">Opening Hours</p>
+          </li>
+
+          <li>
+            <p class="p">Monday – Saturday</p>
+
+            <span class="span">09.00 – 18:00</span>
+          </li>
+
+          <li>
+            <p class="p">Sunday – Thursday</p>
+
+            <span class="span">09.00 – 18:00</span>
+          </li>
+
+          <li>
+            <p class="p">Friday – Saturday</p>
+
+            <span class="span">09.00 – 18:00</span>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="h3">Contact Info</p>
+          </li>
+
+          <li>
+            <a href="tel:+01234567890" class="footer-link">
+              <span class="material-symbols-rounded">call</span>
+
+              <span class="span">0762460228</span>
+              <span class="span"> 0773632208</span>
+              <span class="span">0112381931</span>
+
+              
+                
+                
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:info@autofix.com" class="footer-link">
+              <span class="material-symbols-rounded">mail</span>
+
+              <span class="span">vktyres.ceylon@gmail.com
+
+                info@vktyres.lk</span>
+            </a>
+          </li>
+
+          <li>
+            <address class="footer-link address">
+              <span class="material-symbols-rounded">location_on</span>
+
+              <span class="span">42, Babapulle place, Grandpass Road, Colombo 14</span>
+            </address>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <img src="./assets/images/footer-shape-3.png" width="637" height="173" loading="lazy" alt="Shape"
+        class="shape shape-3 move-anim">
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">Copyrights © 2024 VK Tyres. All Rights Reserved | Powered By IT MARTX</p>
+
+        <!-- <img src="./assets/images/footer-shape-2.png" width="778" height="335" loading="lazy" alt="Shape"
+          class="shape shape-2"> -->
+
+        <img src="./assets/images/tyreslider.png" width="805" height="652" loading="lazy" alt="Red Car"
+          class="shape shape-1 move-anim slideimg">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
