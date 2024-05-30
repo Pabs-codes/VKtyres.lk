@@ -64,25 +64,25 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link">Home</a>
+            <a href="#home" class="navbar-link">Home</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">About Us</a>
+            <a href="#about" class="navbar-link">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Products</a>
+            <a href="#products" class="navbar-link">Products</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Contact</a>
+            <a href="#contact" class="navbar-link">Contact</a>
           </li>
 
         </ul>
       </nav>
 
-      <a href="#" class="btn btn-primary">
+      <a href="tel:+94762460228" class="btn btn-primary">
         <span class="span">Call Now</span>
 
         <span class="material-symbols-rounded">arrow_forward</span>
@@ -97,10 +97,6 @@
     </div>
   </header>
 
-
-
-
-
   <main>
     <article>
 
@@ -108,7 +104,7 @@
         - #HERO
       -->
 
-      <section class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/tyrebg.jpg')">
+      <section id="home" class="hero has-bg-image" aria-label="home" style="background-image: url('./assets/images/tyrebg.jpg')">
         <div class="container">
 
           <div class="hero-content">
@@ -121,7 +117,7 @@
               Quality tyres, unbeatable prices, expert service for your vehicle , Best dealer in Sri Lanka 
             </p>
 
-            <a href="#" class="btn">
+            <a href="#about" class="btn">
               <span class="span">Read more</span>
 
               <span class="material-symbols-rounded">arrow_forward</span>
@@ -137,17 +133,11 @@
         </div>
       </section>
 
-
-
-
-
-
-
       <!-- 
         - #ABOUT
       -->
 
-      <section class="section about has-before" aria-labelledby="about-label">
+      <section id="about" class="section about has-before" aria-labelledby="about-label">
         <div class="container">
 
           <figure class="about-banner">
@@ -209,8 +199,7 @@
         - #Products 
       -->
 
-
-      <section class="section products" aria-labelledby="products-label">
+      <section id="products" class="section products" aria-labelledby="products-label">
         <div class="container">
       
           <p class="section-subtitle :dark" id="products-label">Our Products</p>
@@ -302,12 +291,9 @@
         </div>
       </section>
       
-
-
       <!-- contact -->
 
-     
-      <section class="contact-section">
+      <section id="contact" class="contact-section">
         <div class="contactbody"></div>
         <div class="containerrr">
           <h2>Contact Us</h2>
@@ -328,10 +314,8 @@
                   <p>info@vktyres.lk</p>
               </div>
               <div class="contact-item whatsapp">
-                <a href="https://wa.me/+94762460228" target="_blank"> <img src="./assets/images/whatsapp-svgrepo-com.svg" alt="facebook" style="padding-left: 120px;">
+                <a href="https://wa.me/+94762460228" target="_blank"> <img src="./assets/images/whatsapp-svgrepo-com.svg" alt="whatsapp" style="padding-left: 120px;">
                 <h3>WhatsApp </h3>
-                
-               
                 <p>+94762460228</p>  </a>
               </div>
           </div>
@@ -339,17 +323,7 @@
       </div>
     </section>
 
-
       <!-- contact end -->
-
-
-
-
-    
-
-
-
-
 
   <!-- 
     - #FOOTER
@@ -391,7 +365,7 @@
 
             <li>
               <a href="#" class="social-link">
-                <img src="./assets/images/whatsapp-svgrepo-com footer.svg" alt="twitter">
+                <img src="./assets/images/whatsapp-svgrepo-com footer.svg" alt="whatsapp">
               </a>
             </li>
 
@@ -432,7 +406,7 @@
           </li>
 
           <li>
-            <a href="tel:+01234567890" class="footer-link">
+            <a href="tel:+94762460228" class="footer-link">
               <span class="material-symbols-rounded">call</span>
 
               <span class="span">0762460228</span>
@@ -446,7 +420,7 @@
           </li>
 
           <li>
-            <a href="mailto:info@autofix.com" class="footer-link">
+            <a href="mailto:info@vktyres.lk" class="footer-link">
               <span class="material-symbols-rounded">mail</span>
 
               <span class="span">vktyres.ceylon@gmail.com
@@ -488,14 +462,41 @@
 
   </footer>
 
+  <button id="scrollToTopBtn" title="Go to top">
+    <span class="material-symbols-rounded">arrow_upward</span>
+  </button>
 
+  <!-- Your existing scripts -->
+  <script>
+    // Get the button
+    let mybutton = document.getElementById("scrollToTopBtn");
 
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction();
+    };
 
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.onclick = function() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    };
+  </script>
+  
 
   <!-- 
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
+  
 
 </body>
 
