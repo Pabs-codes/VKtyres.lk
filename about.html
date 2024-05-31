@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VK Tyres - Home</title>
+  <title>VK Tyres - About Us</title>
   <meta name="title" content="VK Tyres Sri Lanka">
   <meta name="description" content="This is a tyre shop Sri Lanka">
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -15,62 +15,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <style>
-    .hero {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-bg-image {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-
-    .hero-bg-image.active {
-      opacity: 1;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      color: aliceblue;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    .hero-content .section-title {
-      color: white; /* Change the color of titles to white */
-    }
-
-
-    .fade-in {
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo">
+  <header class="headerB">
+ 
+    <div class="containerB">
+      <a href="index.html" class="logoB">
         <div class="logoclass">
           <img src="./assets/images/VKtyre.png" width="128" height="63" alt="VK Tyres">
         </div>
@@ -92,32 +43,37 @@
         <span class="nav-toggle-icon icon-2"></span>
         <span class="nav-toggle-icon icon-3"></span>
       </button>
-    </div>
+   
+</div>
   </header>
 
   <main>
-    <article>
-      <section id="home" class="hero" aria-label="home">
-        <div class="hero-bg-image" style="background-image: url('./assets/images/tyrebg.jpg');"></div>
-        <div class="hero-bg-image" style="background-image: url('./assets/images/tyrebg2.jpg');"></div>
-        <div class="hero-bg-image" style="background-image: url('./assets/images/tyrebg3.jpg');"></div>
-        <div class="hero-bg-image" style="background-image: url('./assets/images/tyrebg4.jpg');"></div>
-        <div class="container">
-          <div class="hero-content">
-            <p class="section-subtitle fade-in" >Get the best deals on a wide range of tyres</p>
-            <h1 class="h1 section-title fade-in">Your One-Stop Shop for Wholesale Tyres</h1>
-            <p class="section-text fade-in">Quality tyres, unbeatable prices, expert service for your vehicle, Best dealer in Sri Lanka</p>
-            <a href="about.html" class="btn fade-in">
-              <span class="span">Read more</span>
-              <span class="material-symbols-rounded">arrow_forward</span>
-            </a>
-          </div>
-          <figure class="hero-banner" style="--width: 1228; --height: 789; z-index: 1;">
-            <img src="./assets/images/tyreslider.png" width="1028" height="789" alt="Tyre PNG by pab's" class="move-anim" >
-          </figure>
+    <section id="about" class="section about has-before" aria-labelledby="about-label">
+      <div class="container">
+        <figure class="about-banner"></figure>
+        <div class="about-content">
+          <p class="section-subtitle :light">About Us</p>
+          <h2 class="h2 section-title">We’re Commited to Meet the Quality</h2>
+          <p class="section-text">VK Tyres is a leading wholesale tyre supplier in Sri Lanka, offering a comprehensive selection of high-quality tyres for various vehicles. We are committed to providing our customers with competitive prices, exceptional service, and expert advice.</p>
+          <br />
+          <p class="section-text">Why Choose VK Tyres?</p>
+          <ul class="about-list">
+            <li class="about-item">
+              <p><strong class="display-1 strong">Range</strong> We offer a vast selection of tyres</p>
+            </li>
+            <li class="about-item">
+              <p><strong class="display-1 strong">Prices</strong> Best wholesale prices in Sri Lanka</p>
+            </li>
+            <li class="about-item">
+              <p><strong class="display-1 strong">Services</strong> Assist you in finding the perfect tyres</p>
+            </li>
+            <li class="about-item">
+              <p><strong class="display-1 strong">Delivery</strong> Efficient delivery across Sri Lanka</p>
+            </li>
+          </ul>
         </div>
-      </section>
-    </article>
+      </div>
+    </section>
   </main>
 
   <!-- Footer Section -->
@@ -212,58 +168,6 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     };
-
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.hero-bg-image');
-    const heroContent = document.querySelector('.hero-content');
-    const subtitles = [
-      "Get the best deals on a wide range of tyres",
-      "High-Quality Tyres for Every Vehicle",
-      "Unmatched Prices and Superior Service",
-      "Sri Lanka's Trusted Tyre Dealer"
-    ];
-    const titles = [
-      "Your One-Stop Shop for Wholesale Tyres",
-      "Top-Notch Tyres, Unbeatable Prices",
-      "Expert Service and Quality Tyres",
-      "The Best Tyre Deals in Sri Lanka"
-    ];
-    const texts = [
-      "Quality tyres, unbeatable prices, expert service for your vehicle",
-      "Get premium tyres at affordable prices",
-      "Expert service and the best deals on tyres",
-      "Sri Lanka's premier destination for tyres"
-    ];
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-          slide.classList.add('active');
-        }
-      });
-
-      heroContent.innerHTML = `
-        <p class="section-subtitle fade-in">${subtitles[index]}</p>
-        <h1 class="h1 section-title fade-in">${titles[index]}</h1>
-        <p class="section-text fade-in">${texts[index]}</p>
-        <a href="about.html" class="btn fade-in">
-          <span class="span">Read more</span>
-          <span class="material-symbols-rounded">arrow_forward</span>
-        </a>
-      `;
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    setInterval(nextSlide, 5000); // Change slide every 3 seconds
-
-    document.addEventListener('DOMContentLoaded', () => {
-      showSlide(currentSlide);
-    });
   </script>
   <script src="./assets/js/script.js"></script>
 </body>

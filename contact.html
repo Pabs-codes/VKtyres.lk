@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+
+
+          <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VK Tyres - Home</title>
+  <title>VK Tyres - Contact</title>
   <meta name="title" content="VK Tyres Sri Lanka">
   <meta name="description" content="This is a tyre shop Sri Lanka">
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -15,65 +17,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Mulish&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,600,0,0">
   <link rel="stylesheet" href="./assets/css/style.css">
-  <style>
-    .hero {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-bg-image {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-size: cover;
-      background-position: center;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-
-    .hero-bg-image.active {
-      opacity: 1;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-      color: aliceblue;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    .hero-content .section-title {
-      color: white; /* Change the color of titles to white */
-    }
-
-
-    .fade-in {
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <div class="logoclass">
-          <img src="./assets/images/VKtyre.png" width="128" height="63" alt="VK Tyres">
-        </div>
+    <header class="headerB">
+        <div class="containerB">
+            <a href="index.html" class="logoB">
+              <div class="logoclass">
+                <img src="./assets/images/VKtyre.png" width="128" height="63" alt="VK Tyres">
+              </div>
+    
       </a>
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
@@ -96,28 +49,37 @@
   </header>
 
   <main>
-    <article>
-      <section id="home" class="hero" aria-label="home">
-        <div class="hero-bg-image" style="background-image: url('./assets/images/tyrebg.jpg');"></div>
-        <div class="hero-bg-image" style="background-image: url('./assets/images/tyrebg2.jpg');"></div>
-        <div class="hero-bg-image" style="background-image: url('./assets/images/tyrebg3.jpg');"></div>
-        <div class="hero-bg-image" style="background-image: url('./assets/images/tyrebg4.jpg');"></div>
-        <div class="container">
-          <div class="hero-content">
-            <p class="section-subtitle fade-in" >Get the best deals on a wide range of tyres</p>
-            <h1 class="h1 section-title fade-in">Your One-Stop Shop for Wholesale Tyres</h1>
-            <p class="section-text fade-in">Quality tyres, unbeatable prices, expert service for your vehicle, Best dealer in Sri Lanka</p>
-            <a href="about.html" class="btn fade-in">
-              <span class="span">Read more</span>
-              <span class="material-symbols-rounded">arrow_forward</span>
-            </a>
+   
+    <section id="contact" class="contact-section">
+        <div class="contactbody"></div>
+        <div class="containerrr">
+          <h2>Contact Us</h2>
+          <div class="contact-details">
+              <div class="contact-item address">
+                  <h3>Address</h3>
+                  <p>42, Babapulle place, Grandpass Road, Colombo 14</p>
+              </div>
+              <div class="contact-item phone">
+                  <h3>Phone Numbers</h3>
+                  <p>0762460228</p>
+                  <p>0773632208</p>
+                  <p>0112381931</p>
+              </div>
+              <div class="contact-item email">
+                  <h3>Email</h3>
+                  <p>vktyres.ceylon@gmail.com</p>
+                  <p>info@vktyres.lk</p>
+              </div>
+              <div class="contact-item whatsapp">
+                <a href="https://wa.me/+94762460228" target="_blank"> <img src="./assets/images/whatsapp-svgrepo-com.svg" alt="whatsapp" style="padding-left: 120px;">
+                <h3>WhatsApp </h3>
+                <p>+94762460228</p>  </a>
+              </div>
           </div>
-          <figure class="hero-banner" style="--width: 1228; --height: 789; z-index: 1;">
-            <img src="./assets/images/tyreslider.png" width="1028" height="789" alt="Tyre PNG by pab's" class="move-anim" >
-          </figure>
         </div>
-      </section>
-    </article>
+      </div>
+    </section>
+
   </main>
 
   <!-- Footer Section -->
@@ -212,58 +174,6 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     };
-
-    let currentSlide = 0;
-    const slides = document.querySelectorAll('.hero-bg-image');
-    const heroContent = document.querySelector('.hero-content');
-    const subtitles = [
-      "Get the best deals on a wide range of tyres",
-      "High-Quality Tyres for Every Vehicle",
-      "Unmatched Prices and Superior Service",
-      "Sri Lanka's Trusted Tyre Dealer"
-    ];
-    const titles = [
-      "Your One-Stop Shop for Wholesale Tyres",
-      "Top-Notch Tyres, Unbeatable Prices",
-      "Expert Service and Quality Tyres",
-      "The Best Tyre Deals in Sri Lanka"
-    ];
-    const texts = [
-      "Quality tyres, unbeatable prices, expert service for your vehicle",
-      "Get premium tyres at affordable prices",
-      "Expert service and the best deals on tyres",
-      "Sri Lanka's premier destination for tyres"
-    ];
-
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-          slide.classList.add('active');
-        }
-      });
-
-      heroContent.innerHTML = `
-        <p class="section-subtitle fade-in">${subtitles[index]}</p>
-        <h1 class="h1 section-title fade-in">${titles[index]}</h1>
-        <p class="section-text fade-in">${texts[index]}</p>
-        <a href="about.html" class="btn fade-in">
-          <span class="span">Read more</span>
-          <span class="material-symbols-rounded">arrow_forward</span>
-        </a>
-      `;
-    }
-
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }
-
-    setInterval(nextSlide, 5000); // Change slide every 3 seconds
-
-    document.addEventListener('DOMContentLoaded', () => {
-      showSlide(currentSlide);
-    });
   </script>
   <script src="./assets/js/script.js"></script>
 </body>
