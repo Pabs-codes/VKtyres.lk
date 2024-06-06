@@ -134,9 +134,9 @@ body {
   backdrop-filter: blur(7px) saturate(180%); 
   -webkit-backdrop-filter: blur(7px) saturate(180%); 
   border: 3px solid rgb(204, 9, 9); 
-  border-radius: 100px; 
+  border-radius: 100%; 
   box-shadow: 0 0 12px rgba(255, 0, 0, 0.604) inset;
-  padding: 10px;
+
 }
 /*-----------------------------------*\
   #REUSED STYLE
@@ -690,16 +690,21 @@ body {
   margin-bottom: 20px;
 }
 
+.product-container {
+  display: flex;
+  gap: 20px;
+}
+
 .product-categories {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 15px;
-  justify-content: center;
+  justify-content: flex-start;
   margin-bottom: 30px;
 }
 
 .category-btn {
-  background-color: #ff0000;
+  background-color: #a61616;
   border: none;
   color: #fff;
   padding: 10px 20px;
@@ -713,23 +718,13 @@ body {
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
-.product-card {
-  background-color: #dbd6d600;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #d60303;
- border-radius: 20px;
-}
-
-
-
 .product-image {
-  width: 100%;
-  height: 350px;
+  height: 200px;
+  width: 200px;
   border-radius: 15px;
   object-fit: cover;
 }
@@ -741,8 +736,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .product-categories {
+  .product-container {
     flex-direction: column;
+  }
+
+  .product-categories {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .category-btn {
@@ -762,6 +762,8 @@ body {
     height: 250px;
   }
 }
+
+
 /* product section end  */
 
 
@@ -771,18 +773,21 @@ body {
 /* Contact Section Styles */
 .contact-section {
   padding: 40px 20px;
-  background-image: url(../images/storeimg.jpeg);
+  background-image: url(../images/tyrebg.jpg);
   padding-block-start: calc(var(--section-padding) + 70px);
+ 
 }
 
 .contactbody {
   background-color: #000;
+ 
 }
 
 .containerrr {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
+  margin-bottom: 150px;
 }
 
 .contact-section h2 {
@@ -1268,9 +1273,9 @@ body {
     top: 0;
     left: 0;
     right: 380px;
-    width: 50%;
+    width: 30%;
     height: 100%;
-    background-image: url('../images/storeimg.png');
+    background-image: url('../images/aboutbg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
